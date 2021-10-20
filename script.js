@@ -53,7 +53,7 @@ function myFunction() {
   }
   AOS.init({
     offset: 200,
-    once: true,
+    once: false,
     duration: 2000,
   });
 }

@@ -11,13 +11,15 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   /* 4a4a4a;fff7f0;524545; */
   color: white;
-  background-color: #665656;
+  background-color: #494242;
   background-image: url('img/dark-wood.png');
+  background-position-x: center;
   text-align: center;
   background-attachment: fixed;
 }
@@ -42,13 +44,13 @@ h3 {
 h4 {
   font-family: 'Parisienne', cursive;
   font-size: 2em;
-  color: #ddbc00;
+  color: #e0ba47;
 }
 h5 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
   text-transform: uppercase;
-  color: #524545;
+  color: #e0ba47;
   letter-spacing: 0.1em;
   font-weight: bold;
 }
