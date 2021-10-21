@@ -28,7 +28,7 @@ setInterval(function () {
 // Input nama undangan
 function getParameterByName(kepada, url = window.location.href) {
   kepada = kepada.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]' + kepada + '(=([^#]*)|&|#|$)'),
+  var regex = new RegExp('[?&]' + kepada + '(=([^&#]*)|&|#|$)'),
     results = regex.exec(url);
   if (!results) return '-';
   if (!results[2]) return '';
