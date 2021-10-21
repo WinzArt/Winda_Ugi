@@ -34,7 +34,6 @@ function getParameterByName(kepada, url = window.location.href) {
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-document.title = 'Hallo ' + getParameterByName('kepada');
 document.querySelector('#kepada').innerHTML = getParameterByName('kepada');
 
 // Hide
