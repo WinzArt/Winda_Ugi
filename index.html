@@ -5,17 +5,39 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <title>Wedding Invitation</title>
-  <meta property="og:description" content="Our Wedding Ugi & Winda - Sunday, 21 November 2021" />
+  <!-- MS, fb & Whatsapp -->
+  <!-- MS Tile - for Microsoft apps-->
+  <meta name="msapplication-TileImage" content="img/thumbnail.png">
+
+  <!-- fb & Whatsapp -->
+  <!-- Site Name, Title, and Description to be displayed -->
+  <meta property="og:site_name" content="Wedding Invitation">
+  <meta property="og:title" content="Sugimin & Winda Wedding Invitation">
+  <meta property="og:description" content="Our Wedding Ugi & Winda - Sunday, 21 November 2021">
+
+  <!-- Image to display -->
+  <!-- Replace   «example.com/image01.jpg» with your own -->
   <meta property="og:image" content="img/thumbnail.png">
+  <meta property="og:image" itemprop="image" content="img/thumbnail.png">
+
+  <!-- No need to change anything here -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/jpeg">
+
+  <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+
+  <!-- Website to visit when clicked in fb or WhatsApp-->
+  <meta property="og:url" content="http://www.example.com">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <link rel="shortcut icon" href="favicon.ico">
 
@@ -41,7 +63,7 @@
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-  
+
 </head>
 
 <body>
@@ -49,200 +71,291 @@
   <!-- cover -->
   <div id="cover" class="jumbotron jumbotron-fluid">
     <div class="container">
-      <img src="img/divider-atas.png" class="" alt="divide" width="300px" />
-      <h2 class="animate__animated animate__zoomInDown">UNDANGAN</h2>
+      <img src="img/divider-atas.png" class="" alt="divide" width="200px" />
+      <h2 class="animate__animated animate__zoomInDown">Wedding Invitation <br>Winda & Ugi</h2>
       <img src="img/cover.png" class="img-fluid animate__animated animate__jackInTheBox" alt="frame" width="800px" />
-      <p>Kepada Yth: <br>Bapak/Ibu/Saudara/i</p>
-      <h3 id="kepada" class="py-2 animate__animated animate__bounceInDown animate__delay-1s"><i
-          class="bi bi-heart-fill"></i></h3>
-      <p>Di Tempat</p>
+      <h6>Dear</h6>
+      <p id="kepada" class="p-0 mb-2 animate__animated animate__bounceInDown animate__delay-1s"><i
+          class="bi bi-heart-fill"></i></p>
+      <h6>You are cordinally invited to<br>attend our wedding</h6>
       <button id="myButton" onclick="myFunction()"
-        class="btn btn-lg animate__animated animate__delay-2s animate__shakeY mt-3">BUKA
-        UNDANGAN</button>
+        class="btn btn-lg animate__animated animate__delay-2s animate__shakeY mt-3">OPEN</button>
     </div>
   </div>
 
   <!-- home -->
   <div id="isi">
     <div id="home" class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <img src="img/divider-atas.png" alt="divide" width="300px" />
-        <h2 class="animate__animated animate__flash animate__delay-1s">THE WEDDING</h2>
-        <img src="img/Test2.png" class="img-fluid animate__animated animate__bounceInDown" alt="frame" width="800px" />
-        <h5>Minggu, 21 November 2021</h5>
-      </div>
+      <img src="img/divider-atas.png" alt="divide" width="200px" />
+      <h2 class="animate__animated animate__flash animate__delay-2s">The Wedding Of</h2>
+      <img src="img/Test2.png" class="img-fluid myImg animate__animated animate__bounceInDown animate__delay-1s"
+        alt="frame" width="800px" />
+      <h6>Minggu, <br> 21 November 2021</h6>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgba(0, 0, 0, 0.25)" fill-opacity="1"
+          d="M0,128L288,256L576,288L864,160L1152,224L1440,64L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
+      </svg>
     </div>
 
-    <img src="img/divider4.png" class="img-fluid divider" alt="divider" width="200px" />
+    <div class="content">
+      <section id="top">
+        <img src="img/divider4.png" class="img-fluid divider" alt="divider" width="200px" />
 
-    <!-- Love Container -->
-    <div id="love" class="container">
-      <div>
-        <h6>Maha Suci Allah SWT. <br />Yang telah menciptakan makhlukNya berpasang - pasangan. <br />Ya Allah,
-          perkenankanlah dan Ridhoilah putra - putri kami :</h6>
+        <h6 data-aos="fade-up" class="mx-4">Maha Suci Allah SWT. <br />Yang telah menciptakan makhlukNya berpasang -
+          pasangan.
+          <br />Ya Allah,
+          perkenankanlah dan Ridhoilah putra - putri kami :
+        </h6>
 
-        <h1 data-aos="fade-right">Sugimin (Ugi)</h1>
-        <p>Anak laki - laki dari<br />Bpk. Tukirin & Ibu. Darmini</p>
+        <!-- Love Container -->
+        <div id="love" class="container">
+          <header class="header-1" data-aos="zoom-in-up">
+            <h1>Ugi</h1>
+          </header>
+          <img class="lk-1 img-fluid pict" src="img/ferdy.png" alt="" width="300px" data-aos="zoom-in-left">
+          <div class="nama-lk">
+            <h5 class="nama-1" data-aos="fade-right" data-aos-delay="300">Sugimin</h5>
+            <h6 class="nama-2" data-aos="fade-right" data-aos-delay="600">Putra dari pasangan </h6>
+            <h6 class="nama-3" data-aos="fade-right" data-aos-delay="900">Bapak. Tukirin</h6>
+            <h6 class="nama-3" data-aos="fade-right" data-aos-delay="1200">& Ibu. Darmini</h6>
+          </div>
 
-        <h1 style="font-size: 85px; line-height: 100px" data-aos="zoom-in" data-aos-delay="1500">- & -</h1>
+          <!-- <h1 style="font-size: 85px; line-height: 100px" data-aos="zoom-in" data-aos-delay="1500">- & -</h1> -->
 
-        <h1 data-aos="fade-left">Nur
-          Winda Sanjaya (Winda)</h1>
-        <p>Anak perempuan dari<br />Bpk. Wandi & Ibu. Nursidah Lumban G (Winda Salon)</p>
+          <header class="header-2" data-aos="zoom-in-down">
+            <h1>Winda</h1>
+          </header>
+          <img class="pr-1 img-fluid pict" src="img/rifa.png" alt="" width="300px" data-aos="zoom-in-right">
+          <div class="nama-pr">
+            <h5 class="nama-1" data-aos="fade-left" data-aos-delay="300">Nur
+              Winda Sanjaya</h5>
+            <h6 class="nama-2" data-aos="fade-left" data-aos-delay="600">Putri dari pasangan</h6>
+            <h6 class="nama-3" data-aos="fade-left" data-aos-delay="900">Bapak. Wandi</h6>
+            <h6 class="nama-3" data-aos="fade-left" data-aos-delay="1200">& Ibu. Nursidah Lumban G</h6>
+            <h6 class="nama-3" data-aos="fade-left" data-aos-delay="1500">(Winda Salon)</h6>
+          </div>
+        </div>
 
-        <h6>Untuk mengikuti Sunnah Rasul-Mu<br />dalam rangka membentuk keluarga yang sakinah, mawaddah,&
+        <h6 data-aos="fade-up">Untuk mengikuti Sunnah Rasul-Mu<br />dalam rangka membentuk keluarga yang sakinah,
+          mawaddah,&
           warahmah.<br />Maka ijinkanlah kami menikahkannya.</h6>
-      </div>
-    </div>
 
-    <img src="img/divider4.png" class="img-fluid pb-5 divider" alt="divider" width="200px" />
+        <img src="img/divider4.png" class="img-fluid pb-5 divider" alt="divider" width="200px" />
 
-    <div class="pb-5">
-      <h5>OUR SPECIAL</h5>
-      <h3>Wedding Event</h3>
-    </div>
-
-    <h4>Akad Nikah</h4>
-    <div id="akad" class="container">
-      <div class="card" data-aos="fade-down">
-        <svg width="80" height="80" fill="#f9c5d1" class="bi bi-calendar-week" viewBox="0 0 16 16">
-          <path
-            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-          <path
-            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-        </svg>
-        <div class="card-body p-0">
-          <h6 class="card-text">Minggu, <br>21 November 2021</h6>
+        <div class="pb-4">
+          <h5>OUR SPECIAL</h5>
+          <h3>Wedding Event</h3>
         </div>
-      </div>
-      <div class="card" data-aos="fade-down" data-aos-delay="300">
-        <svg width="80" height="80" fill="#f9c5d1" class="bi bi-clock" viewBox="0 0 16 16">
-          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-          <div class="card-body p-0">
-            <h6 class="card-text">08.00 WIB <br>Hingga Selesai</h6>
+
+        <h6 data-aos="fade-up" class="mx-3">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+          isteri-isteri dari
+          jenismu sendiri,<br>supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan- Nya diantaramu
+          rasa
+          kasih
+          dan sayang.<br>Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”
+          <br>
+        </h6>
+
+        <h6 style="font-weight: bold;" class="pb-4">(Ar-Rum: 21)</h6>
+
+        <h4 class="m-0">Akad Nikah</h4>
+        <div id="akad" class="container">
+          <div class="card" data-aos="fade-down">
+            <svg width="80" height="80" fill="#f9c5d1" class="bi bi-calendar-week" viewBox="0 0 16 16">
+              <path
+                d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+            </svg>
+            <div class="card-body p-0">
+              <h6 class="card-text">Minggu, <br>21 November 2021</h6>
+            </div>
           </div>
-      </div>
-    </div>
-
-    <h4>Acara Resepsi</h4>
-    <div id="akad" class="container">
-      <div class="card" data-aos="fade-up">
-        <svg width="80" height="80" fill="#f9c5d1" class="bi bi-calendar-week" viewBox="0 0 16 16">
-          <path
-            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-          <path
-            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-        </svg>
-        <div class="card-body p-0">
-          <h6 class="card-text">Minggu, <br>21 November 2021</h6>
-        </div>
-      </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <svg width="80" height="80" fill="#f9c5d1" class="bi bi-clock" viewBox="0 0 16 16">
-          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-          <div class="card-body p-0">
-            <h6 class="card-text">09.00 WIB <br>Hingga Selesai</h6>
+          <div class="card" data-aos="fade-down" data-aos-delay="300">
+            <svg width="80" height="80" fill="#f9c5d1" class="bi bi-clock" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+              <div class="card-body p-0">
+                <h6 class="card-text">08.00 WIB <br>Hingga Selesai</h6>
+              </div>
           </div>
-      </div>
-    </div>
-    <p>Bertempat di : <br />Kediaman mempelai wanita <br />
-      Jl. Margonda raya gg. Kober Rt03/05 Pondok Cina, kec Beji, Depok
-    </p>
-
-    <!-- Wave -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="rgba(0,0,0,0.25)" fill-opacity="1"
-        d="M0,32L60,26.7C120,21,240,11,360,37.3C480,64,600,128,720,154.7C840,181,960,171,1080,138.7C1200,107,1320,53,1380,26.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-      </path>
-    </svg>
-
-    <!-- Coundown -->
-    <section id="bottom">
-      <h5>WE'RE GETTING MARRIED</h5>
-      <h3>Countdown Timer</h3>
-
-      <div class="countdown">
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic">
-          <h5 id="hari">-</h5>
-          <p class="p1">Hari</p>
         </div>
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="200">
-          <h5 id="jam">-</h5>
-          <p class="p1">Jam</p>
-        </div>
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="400">
-          <h5 id="menit">-</h5>
-          <p class="p1">Menit</p>
-        </div>
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="600">
-          <h5 id="detik">-</h5>
-          <p class="p1">Detik</p>
-        </div>
-      </div>
 
-      <!-- maps -->
-      <div id="maps" class="container" data-aos="flip-up" data-aos-easing="ease-out-cubic">
-        <div class="ratio ratio-4x3">
-          <iframe <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2742619761048!2d106.83449211543653!3d-6.358536163975951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3e13075a79%3A0x8850504fd42ee9e6!2sWinda%20Salon!5e0!3m2!1sid!2sid!4v1634396999878!5m2!1sid!2sid"
-            width="600" height="450" style="border:15px;" allowfullscreen="" loading="lazy"></iframe>
+        <h4 class="m-0">Acara Resepsi</h4>
+        <div id="akad" class="container">
+          <div class="card" data-aos="fade-up">
+            <svg width="80" height="80" fill="#f9c5d1" class="bi bi-calendar-week" viewBox="0 0 16 16">
+              <path
+                d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+            </svg>
+            <div class="card-body p-0">
+              <h6 class="card-text">Minggu, <br>21 November 2021</h6>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <svg width="80" height="80" fill="#f9c5d1" class="bi bi-clock" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+              <div class="card-body p-0">
+                <h6 class="card-text">09.00 WIB <br>Hingga Selesai</h6>
+              </div>
+          </div>
         </div>
-      </div>
+        <h6 data-aos="fade-up">Bertempat di : <br />Kediaman mempelai wanita <br />
+          Jl. Margonda raya gg. Kober Rt03/05 Pondok Cina, kec Beji, Depok
+        </h6>
 
-      <img src="img/divider4.png" class="img-fluid pb-5 divider" alt="divider" width="200px" />
+      </section>
+      <!-- Wave -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f9c5d13a" fill-opacity="1"
+          d="M0,192L288,64L576,160L864,160L1152,288L1440,192L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
+      </svg>
 
-      <div>
-        <h6>“Semoga Allah meghimpun yang terserak dari keduanya, memberkati mereka
+      <section id="bottom">
+        <!-- Coundown -->
+        <h5>WE'RE GETTING MARRIED</h5>
+        <h3>Countdown Timer</h3>
+
+        <div class="countdown">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic">
+            <h5 id="hari">-</h5>
+            <p class="p1">Hari</p>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="200">
+            <h5 id="jam">-</h5>
+            <p class="p1">Jam</p>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="400">
+            <h5 id="menit">-</h5>
+            <p class="p1">Menit</p>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="600">
+            <h5 id="detik">-</h5>
+            <p class="p1">Detik</p>
+          </div>
+        </div>
+
+        <!-- maps -->
+        <div id="maps" class="container" data-aos="flip-up" data-aos-easing="ease-out-cubic">
+          <div class="ratio ratio-4x3">
+            <iframe <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2742619761048!2d106.83449211543653!3d-6.358536163975951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3e13075a79%3A0x8850504fd42ee9e6!2sWinda%20Salon!5e0!3m2!1sid!2sid!4v1634396999878!5m2!1sid!2sid"
+              width="600" height="450" style="border:15px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <img src="img/divider4.png" class="img-fluid pb-5 divider" alt="divider" width="200px" />
+
+
+        <h6 data-aos="fade-up">“Semoga Allah meghimpun yang terserak dari keduanya, <br> memberkati mereka
           berdua dan kiranya Allah
-          meningkatkan kualitas keturunan mereka, menjadikannya pembuka pintu rahmat, sumber ilmu dan hikmah serta
+          meningkatkan kualitas keturunan mereka, <br> menjadikannya pembuka pintu rahmat, sumber ilmu dan hikmah
+          serta
           pemberi
           rasa aman bagi umat.” <br><br></h6>
 
-        <h6 style="font-weight: bold;">(Doa Nabi Muhammad SAW, pada pernikahan putrinya <br>Fatimah Azzahra dengan Ali
+        <h6 style="font-weight: bold;">(Doa Nabi Muhammad SAW, pada pernikahan putrinya Fatimah Azzahra
+          dengan
+          Ali
           Bin
           Abi Thalib)</h6>
-      </div>
 
-      <h4 class=" pt-5 mb-3">Turut Mengundang</h4>
-      <div id="undang" class="container">
-        <div class="row pt-3">
-          <div class=" col-12 col-md-6">
-            <p style="color: black;">
-              Direktur Pt. Axia Prima Sejahtera
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
-            <p style="color: black;">
-              Keluarga Besar H. Nean <br>
-              Keluarga Besar Ali Nean (Endang) <br>
-              Keluarga Besar H. Kacung <br>
-              Kel. Besar Op. Taripar Lumban Gaol <br>
-              Bapak Husin (Pakde)
-            </p>
+
+        <h4 class=" pt-5 m-0">Turut Mengundang</h4>
+        <div id="undang" class="container">
+          <div class="row pt-3">
+            <div class=" col-12 col-md-6">
+              <p style="color: black; font-size: 1em;">
+                Direktur Pt. Axia Prima Sejahtera
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p style="color: black; font-size: 1em;">
+                Keluarga Besar H. Nean <br>
+                Keluarga Besar Ali Nean (Endang) <br>
+                Keluarga Besar H. Kacung <br>
+                Kel. Besar Op. Taripar Lumban Gaol <br>
+                Bapak Husin (Pakde)
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <img src="img/divider-atas.png" class="pt-5" alt="" width="300px" />
-      <h3 class="pt-3">Thank You</h3>
-    </section>
-    <div class="footer">
-      <p style="font-size: 10px;">Created By Winz.Art for My Best Friend</p>
+        <!-- Pesan & Do'a -->
+        <!-- <div class="container" id="pesan">
+          <h4 class="mb-3">Ucapan & Do'a</h4>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h4 id="slide1">Nama</h4>
+                <h6 id="slide12">Ucapan & Do'a</h6>
+              </div>
+              <div class="carousel-item">
+                <h4>Nama</h4>
+                <h6>Ucapan</h6>
+              </div>
+              <div class="carousel-item">
+                <h4>Nama</h4>
+                <h6>Do'a</h6>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Do'a terbaik juga untuk anda.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="submit-to-google-sheet">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="ucapan" rows="5" placeholder="Ucapan & Do'a" name="ucapan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-kirim">Kirim</button>
+            <button class="btn btn-secondary btn-load d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div> -->
+
+        <img src="img/divider-atas.png" class="pt-5" alt="" width="300px" />
+        <h3 class="pt-3">Thank You</h3>
+      </section>
+      <div class="footer">
+        <p style="font-size: 10px;">Created By Winz.Art for My Best Friend</p>
+      </div>
     </div>
   </div>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
 
   <!-- AOS.js -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js">
+  </script>
 
+  <!-- My JS -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ setInterval(function () {
 // Input nama undangan
 function getParameterByName(kepada, url = window.location.href) {
   kepada = kepada.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]' + kepada + '(=([^&#]*)|&|#|$)'),
+  var regex = new RegExp('[?&]' + kepada + '(=([^#]*)|&|#|$)'),
     results = regex.exec(url);
   if (!results) return '-';
   if (!results[2]) return '';
@@ -39,10 +39,10 @@ document.querySelector('#kepada').innerHTML = getParameterByName('kepada');
 // Hide
 function myFunction() {
   var x = document.getElementById('cover');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
+  if (x.style.top === '-200%') {
+    x.style.top = '0';
   } else {
-    x.style.display = 'none';
+    x.style.top = '-200%';
   }
   var y = document.getElementById('isi');
   if (y.style.display === 'block') {
@@ -51,12 +51,13 @@ function myFunction() {
     y.style.display = 'block';
   }
   AOS.init({
-    offset: 200,
+    offset: 100,
     once: false,
-    duration: 2000,
+    duration: 1000,
   });
-}
+};
 
+// Music
 var musik = new Audio();
 musik.src = "hidup.mp3";
 musik.loop = true;
@@ -71,6 +72,6 @@ function mulaiAudio() {
       musik.play();
     }
   }
-}
+};
 window.addEventListener('load', mulaiAudio);
 
