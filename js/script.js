@@ -51,9 +51,9 @@ function myFunction() {
     y.style.display = 'block';
   }
   AOS.init({
-    offset: 100,
+    offset: 200,
     once: false,
-    duration: 1000,
+    duration: 1500,
   });
 };
 
