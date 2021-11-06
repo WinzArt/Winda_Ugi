@@ -58,20 +58,20 @@ function myFunction() {
 };
 
 // Music
-// var musik = new Audio();
-// musik.src = "hidup.mp3";
-// musik.loop = true;
+var musik = new Audio();
+musik.src = "hidup.mp3";
+musik.loop = true;
 
-// function mulaiAudio() {
-//   var play = document.getElementById("myButton");
+function mulaiAudio() {
+  var play = document.getElementById("myButton");
 
-//   play.addEventListener('click', fplay);
+  play.addEventListener('click', fplay);
 
-//   function fplay() {
-//     if (musik.paused) {
-//       musik.play();
-//     }
-//   }
-// };
-// window.addEventListener('load', mulaiAudio);
+  function fplay() {
+    if (musik.paused) {
+      musik.play();
+    }
+  }
+};
+window.addEventListener('load', mulaiAudio);
 
