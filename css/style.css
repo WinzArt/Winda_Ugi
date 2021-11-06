@@ -18,7 +18,7 @@ body {
   /* 4a4a4a;fff7f0;524545; */
   background-color: #494242;
   background-image: url('../img/ring.jpg');
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
   text-align: center;
   background-attachment: fixed;
@@ -78,7 +78,6 @@ p {
   min-height: 100vmax;
   transition: all ease 3s;
   background-image: url('../img/shattered-dark.png');
-  background-color: #00000000;
   padding: 1em;
 }
 #cover p {
