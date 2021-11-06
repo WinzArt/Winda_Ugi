@@ -84,7 +84,7 @@ p {
   font-size: 1.2em;
 }
 #cover .container {
-  background: -webkit-linear-gradient(#f2d3e0, #f48bb9);
+  background: -webkit-linear-gradient(#ffffff, #f48bb9);
   border-radius: 15px;
   border: 3px solid;
   border-color: #73646a;
@@ -129,8 +129,9 @@ p {
   min-height: 100vmax;
 }
 #home h6 {
-  color: #73646a;
+  color: #ffffff;
   font-size: 1.5em;
+  font-weight: bold;
   background-color: #f2d3e0;
   border-radius: 5px;
   padding: 5px;
