@@ -33,7 +33,7 @@ h1 {
 }
 h2 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #73646a;
 }
 h3 {
@@ -158,7 +158,7 @@ p {
 }
 #love h6 {
   margin: 0;
-  line-height: 1.2em;
+  line-height: 1.4em;
   letter-spacing: 1.4px;
 }
 #love .nama-1 {
@@ -174,6 +174,7 @@ p {
 }
 #love .nama-2 {
   font-size: 12px;
+  font-weight: lighter;
 }
 #love .nama-3 {
   font-size: 14px;
