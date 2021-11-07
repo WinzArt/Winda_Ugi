@@ -54,12 +54,13 @@ function myFunction() {
     offset: 200,
     once: false,
     duration: 1500,
+    easing: 'ease-out-quart',
   });
 };
 
 // Music
 var musik = new Audio();
-musik.src = "hidup.mp3";
+musik.src = "You Are The Reason - Calum Scott.mp3";
 musik.loop = true;
 
 function mulaiAudio() {
@@ -74,4 +75,19 @@ function mulaiAudio() {
   }
 };
 window.addEventListener('load', mulaiAudio);
+
+// Disable rignhtclick
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+function mischandler() {
+  return false;
+}
+function mousehandler(e) {
+  var myevent = (isNS) ? e : event;
+  var eventbutton = (isNS) ? myevent.which : myevent.button;
+  if ((eventbutton == 2) || (eventbutton == 3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
 

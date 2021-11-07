@@ -17,7 +17,7 @@ body {
 body {
   /* 4a4a4a;fff7f0;524545; */
   background-color: #494242;
-  background-image: url('../img/ring.jpg');
+  background-image: url('../img/ring2.jpg');
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -33,7 +33,7 @@ h1 {
 }
 h2 {
   font-family: 'Pacifico', cursive;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #73646a;
 }
 h3 {
@@ -75,10 +75,13 @@ p {
   top: 0;
   z-index: 1;
   width: 100%;
-  min-height: 100vmax;
+  height: 100%;
   transition: all ease 3s;
   background-image: url('../img/shattered-dark.png');
-  padding: 1em;
+  padding: 2em;
+}
+#cover h2 {
+  font-size: 2rem;
 }
 #cover p {
   font-size: 1.2em;
@@ -88,7 +91,7 @@ p {
   border-radius: 15px;
   border: 3px solid;
   border-color: #73646a;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 #isi {
   display: none;
@@ -126,7 +129,7 @@ p {
 #home {
   position: relative;
   padding: 2em 0 10em;
-  min-height: 100vmax;
+  height: 100vh;
 }
 #home h6 {
   color: #ffffff;
@@ -135,8 +138,9 @@ p {
   background-color: #f2d3e0;
   border-radius: 5px;
   padding: 5px;
-  margin: 1em auto;
+  margin: 3em auto;
   background: -webkit-linear-gradient(#f2d3e0bb, #f48bb9);
+  max-width: 20em;
 }
 #home svg {
   position: absolute;
@@ -222,11 +226,11 @@ p {
   display: flex;
   max-width: 520px;
   justify-content: space-evenly;
-  padding: 0.5em 0 4em;
+  padding: 0.5em 0 3em;
 }
 .card {
   width: 200px;
-  padding: 2em 0.5em;
+  padding: 2em 0em;
   margin: 0 1em;
   background: -webkit-linear-gradient(#00000035, #f48bb979);
   align-items: center;
@@ -289,6 +293,17 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+#protocol {
+  max-width: 720px;
+  padding: 0 1em 2em;
+}
+#protocol img {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 4px 0px 4px 0px;
+  border-color: #f2d3e0;
+}
+
 #maps {
   margin-bottom: 3em;
   box-shadow: -5px 8px 15px black;
@@ -312,7 +327,7 @@ iframe {
   text-align: center;
   background-color: #f2d3e0;
   border-radius: 1em;
-  max-width: 460px;
+  max-width: 720px;
 }
 #undang p {
   margin: 0;
